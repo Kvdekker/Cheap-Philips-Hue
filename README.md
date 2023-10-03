@@ -9,7 +9,7 @@ Door gebruik te maken van deze manual, leer je zelf om een goedkope Philips Hue 
 3. [Arduino IDE](https://www.arduino.cc/en/software)
 4. Een Wifi connectie
 
-Wij gaan er van uit dat u het Arduino Board correct hebt geinstalleerd. Als u alle onderdelen klaar heeft liggen, gaan we van start.
+Wij gaan er van uit dat je het Arduino Board correct hebt geinstalleerd. Als je alle onderdelen klaar heeft liggen, gaan we van start.
 
 ## Stap 1: Installeer de Arduino Libraries
 Open de Arduino applicatie.
@@ -61,7 +61,9 @@ Klik vervolgens op Color picker.
 
 ![image](https://github.com/Kvdekker/Cheap-Philips-Hue/assets/96053886/4b7eb959-630a-41f9-a990-29d097d88282)
 
-Nu zal je hoogswaarschijnlijk de vraag krijgen om een _Feed te connecten_. Dit kan je doen door in het lege vak een naam in te typen. _**LET OP** De naam die je hier intypt ga je moeten hertypen in de code_! Dit zorgt ervoor dat jij de kleur kan zenden naar jouw Arduino Kit. Vink daarna jouw gemaakte Feed aan en klik op next step. 
+Nu zal je hoogswaarschijnlijk de vraag krijgen om een _Feed te connecten_. Dit kan je doen door in het lege vak een naam in te typen.
+_**LET OP** De naam die je hier intypt ga je moeten hertypen in de code_! Dit zorgt ervoor dat jij de kleur kan zenden naar jouw Arduino Kit. 
+Vink daarna jouw gemaakte Feed aan en klik op next step. 
 
 ![image](https://github.com/Kvdekker/Cheap-Philips-Hue/assets/96053886/02fd3baf-e22a-4fd0-812a-080d988c9f24)
 
@@ -77,9 +79,11 @@ Open je Arduino IDE file die je in stapt 1 geopend hebt. Klik op File -> Example
 
 Zie je hetzelfde als op de foto hierboven? Dan ben je goed bezig.
 
-Met deze code gaan we jou LEDS connecten aan het dashboard die je zojuist aangemaakt hebt, waar jouw colorpicker klaar staat om gebruikt te worden.
+Met deze code gaan we jou LEDS connecten aan het dashboard die je zojuist aangemaakt hebt waar jouw colorpicker klaar staat om gebruikt te worden.
 
-Je moet nu Binnen Arduino IDE klikken op het tabje boven in, genaamd config.h . Hier ga jij je de gebruikersnaam en sleutel die je eerder gekopieerd hebt van jouw dashboard hierin plakken. Ik kon zelf eerder niet vinden waar ik dit moest plakken, omdat ik het tabje Config.h niet kon vinden. Vervang bovenin je code de tejst #define IO_USERNAME en #define IO_KEY met de gegevens die je gekopieerd hebt. Ga vervolgens naar beneden totdat je #define WIFI_SSID en #define WIFI_PASS tegenkomt. Hier vul jij jouw Wifi inlog en wachtwoord in. Vul dit in tussen de aanhalingstekens. 
+Je moet nu binnen Arduino IDE klikken op het tabje boven in, genaamd config.h . Hier ga jij je de gebruikersnaam en sleutel die je eerder gekopieerd hebt van jouw dashboard hierin plakken. Ik kon zelf eerder niet vinden waar ik dit moest plakken, omdat ik het tabje Config.h niet kon vinden. Vervang bovenin je code de tekst #define IO_USERNAME en #define IO_KEY met de gegevens die je gekopieerd hebt. Ga vervolgens naar beneden totdat je #define WIFI_SSID en #define WIFI_PASS tegenkomt. Hier vul jij jouw Wifi inlog en wachtwoord in. Vul dit in tussen de aanhalingstekens. 
+
+Het zou kunnen dat je verbonden bent op een 5GHz netwerk. Deze werkt jammer genoeg niet ben ik achter gekomen. Om dit te omzeilen kan je een hotspot aanmaken op je telefoon. Vergeet niet om dan ook je Wifinaam en wachtwoord opnieuw in te vullen. 
 
 Ga vervolgens terug naar het vorige tabje wat naast config.h staat.
 
