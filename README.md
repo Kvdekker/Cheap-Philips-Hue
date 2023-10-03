@@ -90,7 +90,11 @@ Ga vervolgens terug naar het vorige tabje wat naast config.h staat.
 Scroll totdat je #define PIXEL_PIN tegenkomt en vul de juiste waardes in. Ik heb mijn draad op D5 met 15 leds. Vul dit in.
 ![image](https://github.com/Kvdekker/Cheap-Philips-Hue/assets/96053886/1c988b03-e69b-4076-90f2-cf247ce4286e)
 
-Vul ook jouw Feednaam in die jij gemaakt hebt:
+Vul ook jouw _Feednaam_ in die jij gemaakt hebt:
 ![image](https://github.com/Kvdekker/Cheap-Philips-Hue/assets/96053886/5c7333ea-3e25-4f45-86e6-49d99e4eaadc)
 
 Klik nu op verify om te controleren of jouw code klopt. Klik vervolgens op Upload. Verander nadat de code geupload is naar jouw Arduino de kleur via de Colorpicker in de webbrowser in. Veranderd jouw ledstrip? Gefeliciteerd! Jouw eigen goedkopen Philips Hue is af!
+
+
+https://github.com/Kvdekker/Cheap-Philips-Hue/assets/96053886/ec0db7b1-1afc-409a-a121-afecd9603fbb
+
