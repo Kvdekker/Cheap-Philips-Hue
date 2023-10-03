@@ -1,4 +1,4 @@
-![image](https://github.com/Kvdekker/Cheap-Philips-Hue/assets/96053886/ff5ab988-bbc2-40a9-ad93-8981771ff933)# Cheap-Philips-Hue
+# Cheap-Philips-Hue
 By Koen Dekker
 Last updated 3 October 2023
 
@@ -13,6 +13,7 @@ Wij gaan er van uit dat u het Arduino Board correct hebt geinstalleerd. Als u al
 
 ## Stap 1: Installeer de Arduino Libraries
 Open de Arduino applicatie.
+
 Klik onder File op _New Sketch_
 ![image](https://github.com/Kvdekker/Cheap-Philips-Hue/assets/96053886/19b4c07d-5949-49a2-bcb7-42761d7a19b8)
 
@@ -48,7 +49,7 @@ Op het volgende scherm, klik je recht op het tandwiel icoon en klik je op _Creat
 Klik vervolgens op Color picker.
 ![image](https://github.com/Kvdekker/Cheap-Philips-Hue/assets/96053886/4b7eb959-630a-41f9-a990-29d097d88282)
 
-Nu zal je hoogswaarschijnlijk de vraag krijgen om een _Feed te connecten_. Dit kan je doen door in het lege vak een naam in te typen. Dit zorgt ervoor dat jij de kleur kan zenden naar jouw Arduino Kit. Vink daarna jouw gemaakte Feed aan en klik op next step. 
+Nu zal je hoogswaarschijnlijk de vraag krijgen om een _Feed te connecten_. Dit kan je doen door in het lege vak een naam in te typen. _**LET OP** De naam die je hier intypt ga je moeten hertypen in de code_! Dit zorgt ervoor dat jij de kleur kan zenden naar jouw Arduino Kit. Vink daarna jouw gemaakte Feed aan en klik op next step. 
 ![image](https://github.com/Kvdekker/Cheap-Philips-Hue/assets/96053886/02fd3baf-e22a-4fd0-812a-080d988c9f24)
 
 Geef hier jouw Color picker een Block Title (als je dat wilt). Klik daarna op create block.
@@ -57,9 +58,20 @@ Geef hier jouw Color picker een Block Title (als je dat wilt). Klik daarna op cr
 Test nu de color picker door erop te klikken en de kleur aan te passen in de browser. Werkt dit? Dan ben je klaar met stap 2.
 
 ## Stap 3: Connect Arduino met Color Picker
-Open je Arduino IDE file die je in stapt 1 geopend hebt. Klik op File -> Examples -> Adafruit IO Arduino (scroll even naar beneden, ik maakte die fout ook!) -> adafruitio_14_neopixel. Klik hierop ene hij zal een nieuwe sketch openen. Zet deze op groot beeld.
+Open je Arduino IDE file die je in stapt 1 geopend hebt. Klik op File -> Examples -> Adafruit IO Arduino (scroll even naar beneden, ik maakte die fout ook!) -> adafruitio_14_neopixel. Klik hierop en hij zal een nieuwe sketch openen. Zet deze op groot beeld.
 ![image](https://github.com/Kvdekker/Cheap-Philips-Hue/assets/96053886/0816838d-e9c1-4720-907f-d001650bd771)
 Zie je hetzelfde als op de foto hierboven? Dan ben je goed bezig.
 
 Met deze code gaan we jou LEDS connecten aan het dashboard die je zojuist aangemaakt hebt, waar jouw colorpicker klaar staat om gebruikt te worden.
 
+Je moet nu Binnen Arduino IDE klikken op het tabje boven in, genaamd config.h . Hier ga jij je de gebruikersnaam en sleutel die je eerder gekopieerd hebt van jouw dashboard hierin plakken. Ik kon zelf eerder niet vinden waar ik dit moest plakken, omdat ik het tabje Config.h niet kon vinden. Vervang bovenin je code de tejst #define IO_USERNAME en #define IO_KEY met de gegevens die je gekopieerd hebt. Ga vervolgens naar beneden totdat je #define WIFI_SSID en #define WIFI_PASS tegenkomt. Hier vul jij jouw Wifi inlog en wachtwoord in. Vul dit in tussen de aanhalingstekens. 
+
+Ga vervolgens terug naar het vorige tabje wat naast config.h staat.
+
+Scroll totdat je #define PIXEL_PIN tegenkomt en vul de juiste waardes in. Ik heb mijn draad op D5 met 15 leds. Vul dit in.
+![image](https://github.com/Kvdekker/Cheap-Philips-Hue/assets/96053886/1c988b03-e69b-4076-90f2-cf247ce4286e)
+
+Vul ook jouw Feednaam in die jij gemaakt hebt:
+![image](https://github.com/Kvdekker/Cheap-Philips-Hue/assets/96053886/5c7333ea-3e25-4f45-86e6-49d99e4eaadc)
+
+Klik nu op verify om te controleren of jouw code klopt. Klik vervolgens op Upload. Verander nadat de code geupload is naar jouw Arduino de kleur via de Colorpicker in de webbrowser in. Veranderd jouw ledstrip? Gefeliciteerd! Jouw eigen goedkopen Philips Hue is af!
