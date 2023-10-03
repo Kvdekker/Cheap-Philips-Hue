@@ -98,3 +98,6 @@ Klik nu op verify om te controleren of jouw code klopt. Klik vervolgens op Uploa
 
 https://github.com/Kvdekker/Cheap-Philips-Hue/assets/96053886/ec0db7b1-1afc-409a-a121-afecd9603fbb
 
+BRONNEN
+https://www.instructables.com/Adafruit-IO-Color-Your-LEDs-With-a-Colorpicker/
+https://learn.adafruit.com/adafruit-io-basics-esp8266-arduino/adafruit-io-setup
